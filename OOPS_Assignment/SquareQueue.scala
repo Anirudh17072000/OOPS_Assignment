@@ -9,3 +9,12 @@ class SquareQueue(queue: ListBuffer[Int]) extends Queue {
   }
 
 }
+
+class DoubleQueue(queue : ListBuffer[Int]) extends Queue {
+
+  override def enqueue(elementToBePushed: Int): Unit = {
+
+    queue += (elementToBePushed * 2)
+  }
+
+}
